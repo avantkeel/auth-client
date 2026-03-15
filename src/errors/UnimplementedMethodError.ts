@@ -1,0 +1,6 @@
+export default class UnimplementedMethodError extends Error {
+  constructor(methodName: string) {
+    super(`Method '${methodName}' is not implemented`);
+    this.name = "UnimplementedMethodError";
+  }
+}
