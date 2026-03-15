@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules
+/node_modules
+
+# Production artifacts/build directories
+dist
+build
+.next
+.cache
+
+# Environment variables
+.env
+.env.local
+
+# Testing and coverage
+coverage
+
+# Optional npm cache directory
+.npm
+
+# Typescript cache
+*.tsbuildinfo
+
+# Editors and IDEs (can be global)
+.idea/        # JetBrains IDEs
+.vscode/      # VS Code
+.DS_Store     # macOS
+npm-debug.log # old npm debug logs
+yarn-error.log # yarn error logs
