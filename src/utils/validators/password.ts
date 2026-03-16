@@ -2,9 +2,9 @@ export interface PasswordValidation {
   lengthValid: boolean;
   capsValid: boolean;
   symbolsValid: boolean;
-  numbersValid: boolean;   // Added: 0-9
-  noSpaces: boolean;       // Added: Prevent bypasses with spaces
-  isStrong: boolean;       // Added: Convenience flag for UI
+  numbersValid: boolean; // Added: 0-9
+  noSpaces: boolean; // Added: Prevent bypasses with spaces
+  isStrong: boolean; // Added: Convenience flag for UI
 }
 
 export function validatePassword(password: string): PasswordValidation {
@@ -16,11 +16,7 @@ export function validatePassword(password: string): PasswordValidation {
 
   // A password is "Strong" only if it hits every single mark
   const isStrong =
-    lengthValid &&
-    capsValid &&
-    symbolsValid &&
-    numbersValid &&
-    noSpaces;
+    lengthValid && capsValid && symbolsValid && numbersValid && noSpaces;
 
   return {
     lengthValid,
@@ -28,6 +24,6 @@ export function validatePassword(password: string): PasswordValidation {
     symbolsValid,
     numbersValid,
     noSpaces,
-    isStrong
+    isStrong,
   };
 }
