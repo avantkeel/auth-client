@@ -5,7 +5,7 @@ import type {
   SignupErrorResponse,
 } from "./types/signup";
 
-export default class AuthenticationService {
+export default class AuthService {
   private baseurl: string;
 
   constructor(baseurl: string) {
